@@ -2,6 +2,7 @@ from fastapi import FastAPI, Query, Form
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from typing import Optional
+import uvicorn
 
 app = FastAPI()
 
@@ -85,3 +86,6 @@ def geef_advies(
         "mogelijke_vergoedingsstromen": list(vergoedingsstromen),
         "opvolgstap": "Neem contact op met een leverancier of gemeente voor verdere aanvraag."
     }
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8080)
