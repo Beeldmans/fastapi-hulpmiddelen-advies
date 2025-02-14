@@ -84,7 +84,7 @@ def geef_advies(
     return {
         "aanbevolen_hulpmiddelen": aanbevolen_hulpmiddelen,
         "mogelijke_vergoedingsstromen": list(vergoedingsstromen),
-        "opvolgstap": "Neem contact op met een leverancier of gemeente voor verdere aanvraag."
+        "opvolgstap": "Neem contact op met een leverancier of gemeente voor verdere aanvraag. Bedankt"
     }
 
 if __name__ == "__main__":
